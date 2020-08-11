@@ -58,7 +58,8 @@
 (setq +latex-viewers '(pdf-tools))
 (setq-default TeX-engine 'xetex)
 
-(setq TeX-command-extra-options "-output-directory=./tmp") ;; Set directory for compilation output files.
+;;(setq TeX-command-extra-options "-output-directory=./tmp") ;; Set directory for compilation output files.
+(setq TeX-command-extra-options "--shell-escape")
 
 ;; Ispell
 (setq ispell-dictionary "british-ise-w_accents") ;; Set default dictionary.
